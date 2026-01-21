@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 001</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .mensagem1:hover {
+        background-color: rgb(0, 221, 155, 0.61);
+        font-weight: bold;
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .mensagem2:hover {
+        background-color: rgb(0, 169, 221, 0.61);
+        font-weight: bold;
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .mensagem3:hover {
+        background-color: rgba(221, 144, 0, 0.61);
+        font-weight: bold;
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .mensagem4:hover {
+        background-color: rgba(221, 0, 147, 0.61);
+        font-weight: bold;
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #especial:hover {
+        background-color: rgba(221, 0, 0, 0.61);
+        font-weight: bold;
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desafio 001 - Mensagens</h1>
+    <p>Olá, seja bem-vindo(a)! Este é o primeiro desafio do curso de HTML e CSS.</p>
+    <p><strong style="color: darkred">Passe o mouse em cima das mensagens!</strong></p>
+
+    <p class="mensagem1">* Um</p>
+    <p class="mensagem2">** Dois</p>
+    <p class="mensagem3">*** Três</p>
+    <p class="mensagem4">**** Quatro</p>
+    <p id="especial" onclick="clicou()">***** ESPECIAL - [ CLIQUE AQUI ]</p>
+    <p class="mensagem4">**** Quatro</p>
+    <p class="mensagem3">*** Três</p>
+    <p class="mensagem2">** Dois</p>
+    <p class="mensagem1">* Um</p>
+
+    <script>
+      function clicou() {
+        let mensagem1 = document.querySelectorAll('.mensagem1');
+        let mensagem2 = document.querySelectorAll('.mensagem2');
+        let mensagem3 = document.querySelectorAll('.mensagem3');
+        let mensagem4 = document.querySelectorAll('.mensagem4');
+        let especial = document.getElementById('especial');
+
+        for (let i = 0; i < mensagem1.length; i++) {
+          mensagem1[i].style.backgroundColor = 'rgba(0, 221, 155, 0.61)';
+          mensagem1[i].style.fontWeight = 'bold';
+          mensagem1[i].style.borderRadius = '5px';
+          mensagem1[i].style.padding = '5px';
+        }
+
+        for (let i = 0; i < mensagem2.length; i++) {
+          mensagem2[i].style.backgroundColor = 'rgba(0, 169, 221, 0.61)';
+          mensagem2[i].style.fontWeight = 'bold';
+          mensagem2[i].style.borderRadius = '5px';
+          mensagem2[i].style.padding = '5px';
+        }
+
+        for (let i = 0; i < mensagem3.length; i++) {
+          mensagem3[i].style.backgroundColor = 'rgba(221, 144, 0, 0.61)';
+          mensagem3[i].style.fontWeight = 'bold';
+          mensagem3[i].style.borderRadius = '5px';
+          mensagem3[i].style.padding = '5px';
+        }
+
+        for (let i = 0; i < mensagem4.length; i++) {
+          mensagem4[i].style.backgroundColor = 'rgba(221, 0, 147, 0.61)';
+          mensagem4[i].style.fontWeight = 'bold';
+          mensagem4[i].style.borderRadius = '5px';
+          mensagem4[i].style.padding = '5px';
+        }
+
+        especial.style.backgroundColor = 'rgba(221, 0, 0, 0.61)';
+        especial.style.fontWeight = 'bold';
+        especial.style.borderRadius = '5px';
+        especial.style.padding = '5px';
+      }
+    </script>
+  </body>
+</html>
