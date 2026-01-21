@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links e Âncoras</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: rgb(220, 220, 220);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-left: -40px;
+      }
+
+      a {
+        position: relative;
+        text-decoration: none;
+        padding-left: 10p;
+        bottom: 8px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+      }
+
+      li {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+      }
+
+      div {
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+        height: 250px;
+        border: 1px solid black;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      div#redes {
+        background-image: url(logos/fundo-redes.png);
+        background-size: cover;
+      }
+
+      div#hobbys {
+        background-image: url(logos/fundo-hobby.jpg);
+        background-size: cover;
+      }
+
+      div#filmes {
+        background-image: url(logos/fundo-filmes.jpg);
+      }
+
+      div#download {
+        background-image: url(logos/fundo-download.jpg);
+      }
+
+      div.fundo {
+        margin-top: -10px;
+        margin-left: -10px;
+        padding: 10px;
+        background-color: rgba(23, 31, 26, 0.87);
+      }
+
+      h3 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Links e Âncoras</h1>
+    <main>
+      <h2>Sobre Mim</h2>
+      <header>
+        <p>
+          Seja bem-vindo ao meu site! Me chamo Mateus Rodrigues, tenho 19 anos e estou
+          começando a aprender HTML e CSS. Este exercício serve para eu aplicar todo o meu
+          conhecimento aprendido durante as aulas. Aqui irei compartilhar meus hobbies,
+          redes-sociais e um pouco sobre mim. Espero que gostem!
+        </p>
+      </header>
+      <div id="redes">
+        <div class="fundo">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li>
+              <img src="logos/github.png" alt="Logo Github" />
+              <a
+                href="https://github.com/Dev-Mateusrz"
+                lang="pt-br"
+                target="_blank"
+                rel="external"
+              >
+                | GitHub &#x1F517;
+              </a>
+            </li>
+            <li>
+              <img src="logos/linkedin.png" alt="Logo Linkedin" />
+              <a
+                href="https://www.linkedin.com/in/dev-mateusrz/"
+                lang="pt-br"
+                target="_blank"
+                rel="external"
+              >
+                | LinkedIn &#x1F517;
+              </a>
+            </li>
+            <li>
+              <img src="logos/instagram.png" alt="Logo Instagram" />
+              <a
+                href="https://www.instagram.com/iam.tteuw021/"
+                lang="pt-br"
+                target="_blank"
+                rel="external"
+              >
+                | Instagram &#x1F517;
+              </a>
+            </li>
+            <li>
+              <img src="logos/youtube.png" alt="Logo Youtube" />
+              <a
+                href="https://www.youtube.com/@dev-mateusrz"
+                lang="pt-br"
+                target="_blank"
+                rel="external"
+              >
+                | Youtube &#x1F517;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="hobbys">
+        <div class="fundo">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>&#x1F4BB; | Programação</li>
+            <li>&#x1F4DA; | Leitura</li>
+            <li>&#x26BD; | Esportes</li>
+            <li>&#x1F3AE; | Jogos</li>
+            <li>&#x1F3A4; | Cantar</li>
+          </ul>
+        </div>
+      </div>
+      <div id="filmes">
+        <div class="fundo">
+          <h3>Filmes Favoritos</h3>
+          <ul>
+            <li>&#x1F47B; | Invocação do Mal</li>
+            <li>&#x2694;&#xFE0F; | Vingadores: Ultimato</li>
+            <li>&#x1F388; | It: A Coisa</li>
+            <li>&#x1F47E; | Matrix</li>
+            <li>&#x1F680; | Interestelar</li>
+          </ul>
+        </div>
+      </div>
+      <div id="download">
+        <div class="fundo">
+          <h3>Downloads</h3>
+          <ul>
+            <li>
+              <a
+                href="downloads/curriculo.pdf"
+                download="Curriculo.pdf"
+                type="application/pdf"
+              >
+                &#x1F464; | Meu Currículo &#x2B07;
+              </a>
+            </li>
+            <li>
+              <a
+                href="downloads/running.mp3"
+                download="Música Kate Bush.mp3"
+                type="audio/mpeg"
+              >
+                &#x1F3B6; | Música Kate Bush &#x2B07;
+              </a>
+            </li>
+            <li>
+              <a
+                href="downloads/Aula_Links.pdf"
+                download="Aula 4 - Links.pdf"
+                type="application/pdf"
+              >
+                &#x1F4CC; | PDF Aula &#x2B07;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </main>
+  </body>
+</html>
