@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens Dinâmicas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #principal {
+        margin-top: -5px;
+      }
+      main {
+        background-color: rgba(199, 199, 199, 0.308);
+        text-align: center;
+        max-width: 730px;
+        padding: 20px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
+      }
+      p {
+        text-align: justify;
+      }
+      img {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 style="text-align: center" id="principal">Imagens Dinâmicas que se Adaptam</h1>
+      <h2>As Primeiras Civilizações</h2>
+      <p>
+        Estudamos na escola, que o termo "Civilizado" só é atribuído quando um grupo de
+        indivíduos formados por uma comunidade são capazes de ter uma estrutura social
+        complexa, como: Cidades, Culturas, Agriculturas e Escrita. Por outro lado, os Homo
+        Sapiens, chamdados de "Não-Civilizados", começou como caçadores-coletores, que ao
+        longo do tempo foram se desenvolvendo na África há mais de 300 mil anos,
+        aprimorando suas habilidades com ferramentas e também o que hoje chamamos de
+        cultura. Então porque eles são considerados com "Não-Civilizados" e não como
+        "Civilizados"?
+      </p>
+      <picture>
+        <source
+          media="(max-width: 480px)"
+          srcset="imagens/homo-sapiens-p.jpeg"
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 790px)"
+          srcset="imagens/homo-sapiens-m.jpeg"
+          type="image/jpeg"
+        />
+        <img src="imagens/homo-sapiens-g.jpeg" alt="Imagem Ilustrativa Homo-Sapiens" />
+      </picture>
+    </main>
+  </body>
+</html>
