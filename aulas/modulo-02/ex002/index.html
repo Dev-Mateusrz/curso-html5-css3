@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipografia e Fontes</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Handlee&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+      @font-face {
+        font-family: 'Starborn';
+        src: url('fontes/Starborn.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'CaviarDreams';
+        src: url('fontes/CaviarDreams.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      /*
+      Tipos de Fontes
+        - opentype (.otf)
+        - truetype (.ttf)
+        - webfont (.woff / .woff2)
+        - embedded-opentype (.eot)
+        - truetype-aat (Apple Adavanced Typography) (.ttc)
+        - svg (.svg)
+      */
+
+      /*
+      shorthand fontes
+        font: font-style -> font-varient -> font-weight -> font-size/line-height -> font-family
+
+      */
+
+      body {
+        background-image: linear-gradient(to right, rgb(53, 53, 53), rgb(39, 37, 37));
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      section {
+        background-color: white;
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 20px;
+        border-radius: 50px 10px;
+        box-shadow: inset 0px 0px 10px 10px rgba(90, 1, 1, 0.541);
+      }
+
+      p {
+        font-family: 'CaviarDreams', sans-serif;
+        font-weight: normal;
+      }
+
+      #titulo-principal {
+        font: italic normal 3em 'Creepster';
+        color: rgb(82, 3, 3);
+      }
+      #titulo-externo {
+        font-family: 'Starborn';
+      }
+
+      #normal {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(196, 19, 19);
+      }
+      #especial {
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(231, 197, 3);
+      }
+      #decorado {
+        font-family: 'Brush Script MT', cursive;
+        color: rgb(204, 0, 255);
+        text-decoration: underline;
+      }
+      #escrita {
+        font-family: 'Handlee', cursive;
+        color: rgb(255, 145, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 id="titulo-principal" style="text-align: center">Fontes Diferentes</h1>
+      <h2 id="normal">Subtítulo Nível 2 Normal</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsa hic,
+        reiciendis et cupiditate obcaecati dignissimos fugit, ea commodi velit, debitis
+        nemo. Iste sunt et eaque! Quaerat distinctio laborum temporibus?
+      </p>
+      <h2 id="especial">Subtítulo Nível 2 Diferente</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat, eligendi
+        dolore vero harum dolores nulla explicabo ullam eaque nobis, magnam nostrum
+        aliquid animi quaerat facilis quae fuga odit repudiandae?
+      </p>
+      <h2 id="decorado">Subtítulo Nível 2 Decorado</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure pariatur magnam
+        repudiandae possimus autem minus! Fugiat nesciunt in possimus unde doloremque,
+        ipsam temporibus. Quas delectus eum quibusdam commodi ea. Labore.
+      </p>
+      <h2 id="escrita">Subtítulo Nível 2 Handwriting</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores inventore ipsum
+        officia reiciendis nulla. Qui eos quasi ut, repellendus blanditiis aperiam
+        voluptatem consequatur eum, natus fugiat, sit quidem dolor iusto!
+      </p>
+    </section>
+    <section>
+      <h1 id="titulo-externo" style="text-align: center">Fontes Externas</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est exercitationem nobis
+        magnam, nostrum eum tempora deserunt obcaecati accusantium necessitatibus beatae
+        ab voluptas at inventore fugit quasi facilis eius sequi. Esse?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum amet dolor hic
+        ullam. Facere ea in, reiciendis, odio dolorum excepturi iste sint fugiat ut totam
+        sit deserunt at dignissimos!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit
+        dolorem accusamus ad laudantium natus vitae temporibus eius eveniet eum. Dolorem
+        culpa voluptatibus placeat hic totam? Nam velit neque necessitatibus!
+      </p>
+    </section>
+  </body>
+</html>
