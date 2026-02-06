@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        background-color: rgb(118, 149, 214);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+      }
+      header {
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: rgb(10, 113, 209);
+      }
+
+      a:hover {
+        background-color: rgb(10, 113, 209);
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+      main {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        margin-top: -40px;
+        border-radius: 20px;
+      }
+      footer {
+        background-color: rgba(70, 69, 69, 0.671);
+        color: white;
+        padding: 5px;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .autor {
+        font-size: 0.8em;
+        color: gray;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Aprendendo Grouping Tags</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos"></section>
+      <section id="noticias">
+        <article>
+          <h2>Comunicado Importante da Nasa</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam
+            enim, fugit minus, doloribus impedit delectus eos illum expedita omnis
+            necessitatibus voluptatibus dolore dolor, nihil a minima quae! Culpa, dolor?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam
+            dicta ratione reprehenderit nihil. Dolorem iure aliquam accusamus natus!
+            Nostrum delectus ipsa adipisci ducimus doloribus, nam ratione sint ut magnam.
+          </p>
+          <aside><p class="autor">Artigo escrito por Mateus Rodrigues</p></aside>
+        </article>
+        <article>
+          <h2>Novo Artigo sobre Tecnologia</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam
+            enim, fugit minus, doloribus impedit delectus eos illum expedita omnis
+            necessitatibus voluptatibus dolore dolor, nihil a minima quae! Culpa, dolor?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam
+            dicta ratione reprehenderit nihil. Dolorem iure aliquam accusamus natus!
+            Nostrum delectus ipsa adipisci ducimus doloribus, nam ratione sint ut magnam.
+          </p>
+
+          <aside><p class="autor">Artigo escrito por Mateus Rodrigues</p></aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p style="text-align: center">
+        Desenvolvido por
+        <strong style="color: rgba(255, 214, 79, 0.849)">&copy; Mateus Rodrigues</strong>
+      </p>
+      <p style="text-align: center">Todos os Direitos Reservados</p>
+    </footer>
+  </body>
+</html>
