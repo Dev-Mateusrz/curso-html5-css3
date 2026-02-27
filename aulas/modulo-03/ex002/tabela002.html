@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Avançadas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        position: relative;
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 10px;
+      }
+
+      thead,
+      tfoot {
+        background-color: #eaecf0;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        background-color: #eaecf0;
+        top: 0px;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: #cae3ec;
+      }
+
+      td,
+      th {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      .posicao {
+        text-align: center;
+      }
+
+      .numero {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabelas Grandes em HTML5</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+      CAPITON
+      THEAD
+        TR, TD, TH
+      TBODY
+        TR, TD, TH
+      TFOOT
+        TR, TD, TH
+  -->
+    <table>
+      <caption>População das Unidades Federativas</caption>
+      <thead>
+        <th scope="col">&#x1F530; | Posição</th>
+        <th scope="col">&#x1F30D; | Estado</th>
+        <th scope="col" style="width: 150px">&#x1F4CA; | População</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="posicao">1º</td>
+          <td>São Pualo</td>
+          <td class="numero">46 081 801</td>
+        </tr>
+        <tr>
+          <td class="posicao">2º</td>
+          <td>Minas Gerais</td>
+          <td class="numero">21 393 441</td>
+        </tr>
+        <tr>
+          <td class="posicao">3º</td>
+          <td>Rio de Janeiro</td>
+          <td class="numero">17 223 547</td>
+        </tr>
+        <tr>
+          <td class="posicao">4º</td>
+          <td>Bahia</td>
+          <td class="numero">14 870 907</td>
+        </tr>
+        <tr>
+          <td class="posicao">5º</td>
+          <td>Paraná</td>
+          <td class="numero">11 890 517</td>
+        </tr>
+        <tr>
+          <td class="posicao">6º</td>
+          <td>Rio Grande do Sul</td>
+          <td class="numero">11 233 263</td>
+        </tr>
+        <tr>
+          <td class="posicao">7º</td>
+          <td>Pernambuco</td>
+          <td class="numero">9 562 007</td>
+        </tr>
+        <tr>
+          <td class="posicao">8º</td>
+          <td>Ceará</td>
+          <td class="numero">9 268 836</td>
+        </tr>
+        <tr>
+          <td class="posicao">9º</td>
+          <td>Pará</td>
+          <td class="numero">8 711 196</td>
+        </tr>
+        <tr>
+          <td class="posicao">10º</td>
+          <td>Santa Catarina</td>
+          <td class="numero">8 187 029</td>
+        </tr>
+        <tr>
+          <td class="posicao">11º</td>
+          <td>Goiás</td>
+          <td class="numero">7 423 629</td>
+        </tr>
+        <tr>
+          <td class="posicao">12º</td>
+          <td>Maranhão</td>
+          <td class="numero">7 018 211</td>
+        </tr>
+        <tr>
+          <td class="posicao">13º</td>
+          <td>Amazonas</td>
+          <td class="numero">4 321 616</td>
+        </tr>
+        <tr>
+          <td class="posicao">14º</td>
+          <td>Paraíba</td>
+          <td class="numero">4 164 468</td>
+        </tr>
+        <tr>
+          <td class="posicao">15º</td>
+          <td>Espírito Santo</td>
+          <td class="numero">4 126 854</td>
+        </tr>
+        <tr>
+          <td class="posicao">16º</td>
+          <td>Mato Grosso</td>
+          <td class="numero">3 893 659</td>
+        </tr>
+        <tr>
+          <td class="posicao">17º</td>
+          <td>Rio Grande do Norte</td>
+          <td class="numero">3 455 236</td>
+        </tr>
+        <tr>
+          <td class="posicao">18º</td>
+          <td>Piauí</td>
+          <td class="numero">3 384 547</td>
+        </tr>
+        <tr>
+          <td class="posicao">19º</td>
+          <td>Alagoas</td>
+          <td class="numero">3 220 848</td>
+        </tr>
+        <tr>
+          <td class="posicao">20º</td>
+          <td>Distrito Federal</td>
+          <td class="numero">2 996 899</td>
+        </tr>
+        <tr>
+          <td class="posicao">21º</td>
+          <td>Mato Grosso do Sul</td>
+          <td class="numero">2 924 631</td>
+        </tr>
+        <tr>
+          <td class="posicao">22º</td>
+          <td>Sergipe</td>
+          <td class="numero">2 299 425</td>
+        </tr>
+        <tr>
+          <td class="posicao">23º</td>
+          <td>Rondônia</td>
+          <td class="numero">1 751 950</td>
+        </tr>
+        <tr>
+          <td class="posicao">24º</td>
+          <td>Tocantis</td>
+          <td class="numero">1 586 859</td>
+        </tr>
+        <tr>
+          <td class="posicao">25º</td>
+          <td>Acre</td>
+          <td class="numero">884 372</td>
+        </tr>
+        <tr>
+          <td class="posicao">26º</td>
+          <td>Amapá</td>
+          <td class="numero">806 517</td>
+        </tr>
+        <tr>
+          <td class="posicao">27º</td>
+          <td>Roraima</td>
+          <td class="numero">738 772</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2" scope="row">Total Habitantes</th>
+          <td class="numero"><strong>213 421 037</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
