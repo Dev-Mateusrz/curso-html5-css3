@@ -236,5 +236,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "livePreview.defaultPreviewPath": "/Curso - Módulo 2/Curso - Exercícios/1 - Gradientes ou Degradê/1.1 - Site com Degradê/index.html",
+  "livePreview.defaultPreviewPath": "/aulas/modulo-04/ex002/form001.html",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
